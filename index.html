@@ -1,51 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Navbar with Effects</title>
-    <style>
-        body {
+    <title>Twitter Home Page Example</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #1DA1F2;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+    }
+
+        nav ul {
             margin: 0;
             padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
         }
 
-        nav {
-            background-color: #333;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 999;
-        }
-
-            nav ul {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                overflow: hidden;
+            nav ul li {
+                margin-right: 20px;
             }
 
-                nav ul li {
-                    float: left;
+                nav ul li:last-child {
+                    margin-right: 0;
                 }
 
-                    nav ul li a {
-                        display: block;
-                        color: white;
-                        text-align: center;
-                        padding: 14px 16px;
-                        text-decoration: none;
-                        font-size: 18px;
-                        font-weight: bold;
-                        transition: all 0.3s ease;
+                nav ul li a {
+                    color: #1DA1F2;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+                }
+
+                    nav ul li a:hover {
+                        color: #14171A;
                     }
 
-                        nav ul li a:hover {
-                            background-color: white;
-                            color: #333;
-                        }
-    </style>
-</head>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .tweet {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        width: calc(33.33% - 20px);
+        min-height: 300px;
+    }
+
+        .tweet img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .tweet h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            color: #1DA1F2;
+            display: flex;
+            align-items: center;
+        }
+
+        .tweet p {
+            margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #14171A;
+        }
+
+        .tweet a {
+            color: #1DA1F2;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .tweet a:hover {
+                color: #14171A;
+            }
+</style>
 <body>
-        Poes
+    <header>
+        <h1>Twitter</h1>
+        <form>
+            <input type="text" placeholder="Search Twitter">
+            <button>Search</button>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Messages</a></li>
+
+            <!-- Add more navigation items here as needed -->
+        </ul>
+
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">Tweet</a></li>
+
+            <!-- Add more navigation items here as needed -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="tweet">
+            <img src="https://via.placeholder.com/50x50" alt="Profile Picture">
+            <h2>Username</h2>
+            <p>This is a tweet. It can be up to 280 characters long.</p>
+            <a href="#">View Tweet</a>
+        </div>
+        <div class="tweet">
+            <img src="https://via.placeholder.com/50x50" alt="Profile Picture">
+            <h2>Username</h2>
+            <p>This is a tweet. It can be up to 280 characters long.</p>
+            <a href="#">View Tweet</a>
+        </div>
+        <div class="tweet">
+            <img src="https://via.placeholder.com/50x50" alt="Profile Picture">
+            <h2>Username</h2>
+            <p>This is a tweet. It can be up to 280 characters long.</p>
+            <a href="#">View Tweet</a>
+        </div>
+
+        <!-- Add more tweets here as needed -->
+    </div>
 </body>
 </html>
