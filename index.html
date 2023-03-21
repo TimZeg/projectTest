@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <div class="logo">
-        <a href="#"><img src="logo.png" alt="Your App Name"></a>
+<header class="header">
+    <div class="header-content">
+        <h1>Welcome to our Community App</h1>
+        <p>Join us and help make a difference in your community</p>
+        <button>Get Involved</button>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">Volunteer Opportunities</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">User Profiles</a></li>
-        </ul>
-    </nav>
 </header>
+
 <nav>
     element and is styled as an unordered list with each list item containing a link to a different section of the app. You can customize this header section with your own logo and navigation links to suit your app's needs.
     <section class="hero">
@@ -119,46 +114,46 @@
             .cta-button:hover {
                 background-color: #f2f2f2;
             }
-        .navbar {
+
+        .header {
+            background-image: url('header-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            background-color: #333;
+            text-align: center;
             color: #fff;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 999;
         }
 
-        .navbar-logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .navbar-menu {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-            .navbar-menu li {
-                margin-right: 20px;
+            .header h1 {
+                font-size: 4rem;
+                font-weight: bold;
+                text-shadow: 2px 2px #000;
             }
 
-            .navbar-menu a {
-                color: #fff;
-                text-decoration: none;
+            .header p {
+                font-size: 1.5rem;
+                margin-top: 20px;
+                text-shadow: 2px 2px #000;
+            }
+
+            .header button {
+                border: none;
+                background-color: #ffd700;
+                color: #333;
+                font-size: 1.2rem;
+                padding: 10px 20px;
+                margin-top: 30px;
+                border-radius: 5px;
+                cursor: pointer;
                 transition: all 0.3s ease;
             }
 
-                .navbar-menu a:hover {
-                    color: #ffd700;
+                .header button:hover {
+                    background-color: #333;
+                    color: #fff;
                 }
-
     </style>
 </html>
