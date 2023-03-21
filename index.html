@@ -13,7 +13,6 @@
         </ul>
     </nav>
 </header>
-In this example, the header contains a logo and a navigation menu with links to the different sections of the app. The logo is wrapped in an anchor tag that links back to the homepage. The navigation menu is contained within a
 <nav>
     element and is styled as an unordered list with each list item containing a link to a different section of the app. You can customize this header section with your own logo and navigation links to suit your app's needs.
     <section class="hero">
@@ -120,5 +119,46 @@ In this example, the header contains a logo and a navigation menu with links to 
             .cta-button:hover {
                 background-color: #f2f2f2;
             }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .navbar-menu li {
+                margin-right: 20px;
+            }
+
+            .navbar-menu a {
+                color: #fff;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+                .navbar-menu a:hover {
+                    color: #ffd700;
+                }
+
     </style>
 </html>
