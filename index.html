@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Page View Counter</title>
+</head>
 <body>
-    <img src="moffel" alt="test"/>
+    <h1>Welcome to my page</h1>
+    <p>This page has been viewed <span id="counter"></span> times.</p>
+    <script>
+        // retrieve the counter value from local storage
+        var counter = parseInt(localStorage.getItem('pageViewCounter')) || 0;
+
+        // increment the counter by 1
+        counter++;
+
+        // store the updated counter value in local storage
+        localStorage.setItem('pageViewCounter', counter);
+
+        // update the counter element on the page
+        document.getElementById('counter').textContent = counter;
+    </script>
 </body>
 </html>
